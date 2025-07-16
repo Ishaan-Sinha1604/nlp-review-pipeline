@@ -31,9 +31,6 @@ Thumbs.db
 *.tar
 *.sock
 
-# Model artifacts (optional)
-*.pkl
-*.joblib
 
 # Ignore secrets (if any)
 secrets.json
