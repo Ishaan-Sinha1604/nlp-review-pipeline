@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+nltk
+matplotlib
+seaborn
+nltk
+requests
+joblib
+fastapi
+uvicorn
+pydantic
+typing

@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.sqlite3
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.env
+
+# Docker
+*.log
+*.pid
+*.tar
+*.sock
+
+# Model artifacts (optional)
+*.pkl
+*.joblib
+
+# Ignore secrets (if any)
+secrets.json
