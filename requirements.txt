@@ -11,3 +11,4 @@ fastapi
 uvicorn
 pydantic
 typing
+flake8

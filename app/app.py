@@ -23,6 +23,12 @@ class ReviewInput(BaseModel):
     unixReviewTime: Optional[str] = None
     overall: float
 
+# Root endpoint — useful for health check or info
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Sentiment Classifier API!"}
+
+# Predict endpoint
 @app.post("/predict")
 def predict(review: ReviewInput):
     try:

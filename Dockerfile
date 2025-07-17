@@ -6,10 +6,10 @@ WORKDIR /app
 
 # Copy app code and model
 COPY ./app /app
+COPY ./requirements.txt /app
 
 # Install dependencies
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir fastapi uvicorn scikit-learn pandas joblib
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Expose the FastAPI port
 EXPOSE 8000
