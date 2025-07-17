@@ -88,3 +88,6 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
             err.pop("input", None)
         errors.append(err)
     return JSONResponse(status_code=422, content={"detail": errors})
+
+
+### Comment added for testing purposes
