@@ -39,14 +39,16 @@ def test_predict_endpoint_invalid_data():
     assert response.json() == {
         "detail": [
             {
+                "input": "not_a_boolean",
                 "loc": ["body", "verified"],
-                "msg": "value is not a valid boolean",
-                "type": "type_error.bool"
+                "msg": "Input should be a valid boolean, unable to interpret input",
+                "type": "bool_parsing"
             },
             {
+                "input": 12345,
                 "loc": ["body", "reviewerID"],
-                "msg": "str type expected",
-                "type": "type_error.str"
+                "msg": "Input should be a valid string",
+                "type": "string_type"
             }
         ]
     }
@@ -63,19 +65,19 @@ def test_predict_endpoint_missing_fields():
     assert response.json() == {
         "detail": [
             {
+                "type": "missing",
                 "loc": ["body", "reviewText"],
-                "msg": "field required",
-                "type": "value_error.missing"
+                "msg": "Field required"
             },
             {
+                "type": "missing",
                 "loc": ["body", "summary"],
-                "msg": "field required",
-                "type": "value_error.missing"
+                "msg": "Field required"
             },
             {
+                "type": "missing",
                 "loc": ["body", "overall"],
-                "msg": "field required",
-                "type": "value_error.missing"
+                "msg": "Field required"
             }
         ]
     }
