@@ -28,7 +28,7 @@ class ReviewInput(BaseModel):
 # Root endpoint — useful for health check or info
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to the Sentiment Classifier API!"}
+    return {"message": "Welcome to the NLP Review Pipeline API!"}
 
 # Predict endpoint
 @app.post("/predict")
