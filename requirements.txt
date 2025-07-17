@@ -13,3 +13,5 @@ pydantic
 typing
 flake8
 httpx
+pytest
+pytest-cov
