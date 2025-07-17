@@ -5,6 +5,10 @@ import pandas as pd
 from typing import Optional
 import os
 
+from fastapi import Request
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
+
 # Load model
 model_path = os.path.join(os.path.dirname(__file__), "model_pipeline.pkl")
 model = joblib.load(model_path)
@@ -73,3 +77,14 @@ def predict(review: ReviewInput):
     except Exception as e:
         print("Unhandled exception:", e)
         return {"error": "Internal Server Error", "details": str(e)}
+    
+# Custom error handler for validation errors
+@app.exception_handler(RequestValidationError)
+async def validation_exception_handler(request: Request, exc: RequestValidationError):
+    errors = []
+    for err in exc.errors():
+        # Drop the 'input' field only for missing fields
+        if err.get("type") == "missing":
+            err.pop("input", None)
+        errors.append(err)
+    return JSONResponse(status_code=422, content={"detail": errors})
