@@ -3,9 +3,11 @@ from pydantic import BaseModel
 import joblib
 import pandas as pd
 from typing import Optional
+import os
 
 # Load model
-model = joblib.load(r"model_pipeline.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "model_pipeline.pkl")
+model = joblib.load(model_path)
 
 # Initialize FastAPI
 app = FastAPI()
