@@ -31,6 +31,8 @@ Thumbs.db
 *.tar
 *.sock
 
+# mlflow
+mlruns/
 
 # Ignore secrets (if any)
 secrets.json
