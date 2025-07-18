@@ -136,11 +136,8 @@ pytest --cov=app --cov-report=term-missing
 
 ## 🏗️ CI/CD Badges
 
-```
 ![CI](https://github.com/Ishaan-Sinha1604/nlp-review-pipeline/actions/workflows/ci_cd.yml/badge.svg)
 ![CD](https://github.com/Ishaan-Sinha1604/nlp-review-pipeline/actions/workflows/deploy.yml/badge.svg)
-
-```
 
 ---
 
