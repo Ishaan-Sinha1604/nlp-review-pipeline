@@ -7,7 +7,7 @@ This end‑to‑end project demonstrates how to build, containerize, test, and d
 ## 🚀 Live Demo
 
 **Test the Web App on Swagger UI:**  
-(https://nlp-review-pipeline.onrender.com/docs)
+[https://nlp-review-pipeline.onrender.com/docs](https://nlp-review-pipeline.onrender.com/docs)
 
 ---
 
