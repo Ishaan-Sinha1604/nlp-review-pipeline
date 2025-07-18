@@ -9,12 +9,18 @@ from fastapi import Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 
+from prometheus_fastapi_instrumentator import Instrumentator
+
 # Load model
 model_path = os.path.join(os.path.dirname(__file__), "model_pipeline.pkl")
 model = joblib.load(model_path)
 
 # Initialize FastAPI
 app = FastAPI()
+
+# Instrumentation for Prometheus
+# This will automatically expose metrics at /metrics endpoint
+Instrumentator().instrument(app).expose(app)
 
 # Define request structure
 class ReviewInput(BaseModel):
