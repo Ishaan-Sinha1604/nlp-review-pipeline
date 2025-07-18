@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/ishaa/OneDrive - Queen's University/Desktop/nlp-review-pipeline/notebooks/../mlruns/0/50a0362ad72f45359e8ae8ae966d4ea1/artifacts
+end_time: 1752821994413
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 50a0362ad72f45359e8ae8ae966d4ea1
+run_name: gregarious-moose-629
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752821987630
+status: 3
+tags: []
+user_id: ishaa

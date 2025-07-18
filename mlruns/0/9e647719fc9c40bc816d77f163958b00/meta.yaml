@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/ishaa/OneDrive - Queen's University/Desktop/nlp-review-pipeline/notebooks/../mlruns/0/9e647719fc9c40bc816d77f163958b00/artifacts
+end_time: 1752821688092
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9e647719fc9c40bc816d77f163958b00
+run_name: intrigued-goose-152
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752821681016
+status: 3
+tags: []
+user_id: ishaa
