@@ -157,5 +157,10 @@ pytest --cov=app --cov-report=term-missing
 
 ---
 
+## 📄 License
 
+MIT © Ishaan Sinha
+This project is licensed under the [MIT License](./LICENSE).  
+You are free to use, modify, and distribute this software with attribution.
 
+---
